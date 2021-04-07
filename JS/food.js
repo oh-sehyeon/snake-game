@@ -5,6 +5,7 @@ import { updatePoints } from './points.js'
 let food = getRandomFoodPosition();
 const EXPANSION_RATE = 1;
 
+//Update Snake size, points and food position when snake eats the food
 export function update() {
     if(onSnake(food)) {
         expandSnake(EXPANSION_RATE);
@@ -13,6 +14,7 @@ export function update() {
     }
 }
 
+//Draw food on the gameboard
 export function draw(gameBoard) {
     const foodElement = document.createElement('div');
     foodElement.style.gridRowStart = food.y;
@@ -21,6 +23,7 @@ export function draw(gameBoard) {
     gameBoard.appendChild(foodElement);
 }
 
+//Generates a random position for the food
 function getRandomFoodPosition() {
     let newFoodPosition;
 
