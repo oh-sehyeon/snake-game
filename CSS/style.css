@@ -17,7 +17,7 @@ body {
 #points-area span {
     color: white;
     font-size: 3rem;
-    margin-right: 15px;
+    margin-bottom: 10px;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,17 +56,12 @@ body {
         padding-top: 50px;
     }
 
-    #game-board {
-        grid-template-rows: repeat(21, 1fr);
-        grid-template-columns: repeat(21, 1fr);
-    }
-
     .snake {
         margin: 1px;
     }
 
     #arrow-keys {
-        width: 70%;
+        width: 80%;
         height: 20%;
         display: flex;
         flex-direction: column;
@@ -85,7 +80,8 @@ body {
     .up i,
     .left-right i,
     .down i {
-        font-size: 3rem;
+        font-size: 5rem;
         color: white;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 }
