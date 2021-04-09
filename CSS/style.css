@@ -110,10 +110,10 @@ and (-webkit-min-device-pixel-ratio: 2.0)
 
 /* Mobile Landscape */
 @media only screen 
-and (max-width: 825px)
+and (max-width: 850px)
 and (orientation: landscape),
 
-(max-width: 825px)
+(max-width: 850px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 4.0)
 {
@@ -220,11 +220,11 @@ and (-webkit-min-device-pixel-ratio: 2.0)
 
 /* Tablet Landscape */
 @media only screen
-and (min-width: 826px)
+and (min-width: 851px)
 and (max-width: 1367px)
 and (orientation: landscape),
 
-(min-width: 826px)
+(min-width: 851px)
 and (max-width: 1367px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2.0)
