@@ -58,10 +58,16 @@ body {
 
 /* Mobile Portrait */
 @media only screen 
-and (max-width: 450px) 
-and (max-height: 850px)
+and (max-width: 768px)
 and (orientation: portrait),
-(-webkit-min-device-pixel-ratio: 4.0)
+
+(max-width: 768px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2.0)
+/* and (max-width: 415px) 
+and (max-height: 897px)
+and (orientation: portrait),
+(-webkit-min-device-pixel-ratio: 4.0) */
 {
     body {
         justify-content: flex-start;
@@ -108,10 +114,16 @@ and (orientation: portrait),
 
 /* Mobile Landscape */
 @media only screen 
-and (max-width: 850px) 
-and (max-height: 450px)
+and (max-height: 768px)
 and (orientation: landscape),
-(-webkit-min-device-pixel-ratio: 4.0)
+
+(max-height: 768px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2.0)
+/* and (max-width: 897px) 
+and (max-height: 415px)
+and (orientation: landscape),
+(-webkit-min-device-pixel-ratio: 4.0) */
 {
     body {
         justify-content: flex-end;
@@ -161,13 +173,21 @@ and (orientation: landscape),
 }
 
 /* Tablet Portrait */
-@media only screen 
-and (min-width: 451px) 
-and (min-height: 851px)
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait),
+
+(min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2.0)
+/* and (min-width: 416px) 
+and (min-height: 898px)
 and (max-width: 1050px) 
 and (max-height: 1400px)
 and (orientation: portrait),
-(-webkit-min-device-pixel-ratio: 4.0)
+(-webkit-min-device-pixel-ratio: 4.0) */
 {
     body {
         justify-content: flex-start;
@@ -186,6 +206,7 @@ and (orientation: portrait),
     }
 
     #arrow-keys {
+        margin-top: 10px;
         width: 50%;
         height: 30%;
         display: flex;
@@ -212,13 +233,21 @@ and (orientation: portrait),
 }
 
 /* Tablet Landscape */
-@media only screen 
-and (min-width: 851px) 
-and (min-height: 451px)
+@media only screen
+and (min-width: 768px)
+and (max-width: 1367px)
+and (orientation: landscape),
+
+(min-width: 768px)
+and (max-width: 1367px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2.0)
+/* and (min-width: 897px) 
+and (min-height: 416px)
 and (max-width: 1400px) 
 and (max-height: 1050px)
 and (orientation: landscape),
-(-webkit-min-device-pixel-ratio: 4.0)
+(-webkit-min-device-pixel-ratio: 4.0) */
 {
     body {
         justify-content: flex-start;
